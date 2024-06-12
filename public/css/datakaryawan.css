@@ -1,0 +1,172 @@
+/* header */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.navbar {
+    background-color: #cdc9b7;
+    height: 80px;
+    padding: 15px;
+}
+
+.login-button {
+    background-color: #515646;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #75796b;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #515646;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: black;
+}
+
+.dropdown {
+    margin-right: 20px;
+}
+
+.userdropdown {
+    font-weight: 600;
+}
+
+.isidropdown1 {
+    font-size: 17px;
+    width: 100%;
+    display: flex;
+}
+
+.isidropdown2 {
+    font-size: 17px;
+    width: 100%;
+    display: flex;
+}
+
+.isidropdown1 span {
+    margin-left: 120px;
+    transition: transform 0.5s;
+}
+
+.isidropdown2 span {
+    margin-left: 115px;
+    transition: transform 0.5s;
+}
+
+.isidropdown1:hover span {
+    transform: translateX(5px);
+}
+
+.isidropdown2:hover span {
+    transform: translateX(5px);
+}
+
+.isidropdown1:hover {
+    font-weight: 550;
+}
+
+.isidropdown2:hover {
+    font-weight: 550;
+}
+
+.dropdown-menu {
+    width: 250px;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #515646;
+        visibility: hidden;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+/* header end */
+
+/* content */
+.container-content {
+    margin-top: 100px;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Efek emboss */
+    background-image: url('../image/backgroundlogin.jpeg');
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 60px;
+    margin-top: 10px;
+}
+
+.card1 {
+    margin-left: 40px;
+}
+
+.buttondicard {
+    
+    margin-top: 20px;
+}
+
+.buttondicard a {
+    border-radius: 7px;
+}
+
+.buttontambah {
+    margin-left: 40px;
+    background-color: #515646;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 7px;
+}
+
+.buttontambah:hover {
+    background-color: #5f6159;
+    color: white;
+}
+/* content end */
